@@ -85,7 +85,7 @@ export class News extends Component {
     this.props.setProgress(10);
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country
       }&category=${this.props.category
-      }&apiKey=ee2137ba5c964c57bf01d5bd827afe1d&page=${this.state.page
+      }&apiKey=${this.props.apiKey}&page=${this.state.page
       }&pageSize=${this.props.pageSize
       }`;
     this.setState({ loading: true });
@@ -157,7 +157,7 @@ export class News extends Component {
       this.setState({page: this.state.page + 1 })
       const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country
       }&category=${this.props.category
-      }&apiKey=ee2137ba5c964c57bf01d5bd827afe1d&page=${this.state.page
+      }&apiKey=${this.props.apiKey}&page=${this.state.page
       }&pageSize=${this.props.pageSize
       }`;
  
