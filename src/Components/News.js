@@ -13,8 +13,7 @@ const [page, setPage] = useState(1)
 const [totalResults, setTotalResults] = useState(0)  
 
 
-// document.title = `${capitalizeFirstLetter(props.category)
-// } - NEWS`;
+
 
 
   const capitalizeFirstLetter = (string) => {
@@ -42,6 +41,8 @@ const [totalResults, setTotalResults] = useState(0)
   }
 useEffect(() =>{
   updateNews();
+  document.title = `${capitalizeFirstLetter(props.category)
+} - NEWS`;
  //eslint-disable-next-line 
 },[])
 
